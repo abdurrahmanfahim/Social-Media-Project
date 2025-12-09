@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Search from "../../../svg/Search";
+import Search from "../../../../svg/Search";
 
 const SearchBox = () => {
   const [iconVisible, setIconVisible] = useState(true);

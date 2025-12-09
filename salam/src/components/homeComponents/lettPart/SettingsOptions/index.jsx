@@ -6,15 +6,17 @@ import Themes from "./Themes";
 const SettingsOptions = () => {
   const [visible, setVisible] = useState(false);
 
-  if (visible) {
-    return <Themes setVisible={setVisible} />;
-  }
   return (
-    <div className="w-[300px] bg-white border border-gray-100 shadow-sm rounded-lg p-5">
+    <div>
+      {visible && <Themes setVisible={setVisible} />}
+    <div className="w-[300px] bg-white border border-gray-100 shadow-sm rounded-lg p-0 lg:p-5">
       <ul className="space-y-1">
         <li
           className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors group"
-          onClick={() => setVisible(!visible)}
+          onClick={() => {
+            setVisible(true);
+            console.log('clicked', visible)
+          }}
         >
           <div className="size-10 rounded-lg bg-gray-50 flex items-center justify-center border border-gray-100">
             <MoonIcon />
@@ -36,6 +38,7 @@ const SettingsOptions = () => {
           </div>
         </li>
       </ul>
+      </div>
     </div>
   );
 };

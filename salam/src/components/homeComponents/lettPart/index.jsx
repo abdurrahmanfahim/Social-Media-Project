@@ -10,7 +10,7 @@ const LeftPart = () => {
       <div className="mb-10">
         <LeftProfile />
       </div>
-      <div className="mt-10 w-3/4 mx-auto ">
+      <div className="mt-10 w-3/4  ">
         {leftData.map((data, index) => (
           <LeftHomeData key={data + index} data={data} />
         ))}

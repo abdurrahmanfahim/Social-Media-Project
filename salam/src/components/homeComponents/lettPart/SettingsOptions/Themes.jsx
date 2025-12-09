@@ -5,7 +5,7 @@ const Themes = ({setVisible}) => {
   
   return (
     <>
-      <div className="w-[300px] bg-white border border-gray-100 shadow-sm rounded-lg p-5">
+      <div className="w-[300px] bg-white border border-gray-100 shadow-sm rounded-lg p-0 lg:p-5">
         <div className="flex items-center gap-3 pb-4 border-b border-gray-50">
           <div className="text-gray-400 hover:text-black"
           onClick={()=> setVisible(false)}>

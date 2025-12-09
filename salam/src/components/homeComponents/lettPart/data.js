@@ -7,7 +7,7 @@ import SettingsIcon from "../../../svg/SettingsIcon";
 export const leftData = [
   {
     icon: NewsFeedIcon,
-    title: "News Feed",
+    title: "NewsFeed",
     to: '/',
   },
   {
